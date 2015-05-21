@@ -24,4 +24,4 @@
 
 ## 6. Bind the columns of the three datasets and calculate the average
 * `new_data` bind the columns in the order of (`subject_data`, `y_data`, `x_data`) with dimensions [10299,68]
-* `output` calculates the average of each measurement for each activity and each subject
+* `output` calculates the average of each measurement for each activity and each subject with dimensions [180,68] (30 subjects and 6 activities, 30*6=180)
