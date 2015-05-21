@@ -1,9 +1,9 @@
 ## 1. Raw data
-*`x_train` and `x_test` contain the various measurements collected from the experiments, 
+* `x_train` and `x_test` contain the various measurements collected from the experiments, 
  with dimensions of x_train[7352,561] and x_test[2947,561]
-*`y_train`and `y_test` identify the activities correspoding to each record,
+* `y_train`and `y_test` identify the activities correspoding to each record,
  with dimensions of y_train[7352,1] and y_test[2947,1]
-*`subject_train`and `subject_test` identify the subject being tested with same dimensions as `y_train` and `y_test`
+* `subject_train`and `subject_test` identify the subject being tested with same dimensions as `y_train` and `y_test`
 
 ## 2. Merged data
 * `x_data` bind the rows of train `x_train` and test `x_test` with dimensions [10299,561]
@@ -19,8 +19,9 @@
 * `activities` reads in the activity_labels corresponding to each number in `y_data`
 * `y_data` is then renamed by substituting the number with the corresponding activity_label
 
-## 5. Put in the column names for `x_data` ("features_names"), `y_data` ("activity") and `subject_data` ("subject")
+## 5. Put in the column names
+* `x_data` ("features_names"), `y_data` ("activity") and `subject_data` ("subject")
 
-## 6. Bind the columns of the three datasets
+## 6. Bind the columns of the three datasets and calculate the average
 * `new_data` bind the columns in the order of (`subject_data`, `y_data`, `x_data`) with dimensions [10299,68]
 * `output` calculates the average of each measurement for each activity and each subject
