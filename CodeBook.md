@@ -1,14 +1,14 @@
 ## 1. Raw data
 * `x_train` and `x_test` contain the various measurements collected from the experiments, 
- with dimensions of x_train[7352,561] and x_test[2947,561]
+ with dimensions of [7352,561] and [2947,561], respectively
 * `y_train`and `y_test` identify the activities correspoding to each record,
- with dimensions of y_train[7352,1] and y_test[2947,1]
+ with dimensions of [7352,1] and [2947,1], respectively
 * `subject_train`and `subject_test` identify the subject being tested with same dimensions as `y_train` and `y_test`
 
 ## 2. Merged data
 * `x_data` bind the rows of train `x_train` and test `x_test` with dimensions [10299,561]
 * `y_data` bind the rows of train `y_train` and test `y_test` with dimensions [10299,1]
-* `subject_data` bind the rows of train `subject_train` and test `subject_test` with same dimensions as y_data
+* `subject_data` bind the rows of train `subject_train` and test `subject_test` with same dimensions as `y_data`
 
 ## 3. Subsetting `x_data`
 * `features` reads in the names of the measurements, i.e., the column names of `x_data`
